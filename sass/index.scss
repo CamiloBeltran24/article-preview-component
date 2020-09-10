@@ -179,27 +179,32 @@ body {
         margin-bottom: 15px;
         .share-btn {
           left: 90px;
+          top: 5px;
           z-index: 2;
         }
         .share {
           width: 375px;
           bottom: -15px;
-          top: 0;
+          top: 0px;
           left: -18px;
           right: 0;
           z-index: 1;
           display: block;
           border-top-left-radius: 0;
           border-top-right-radius: 0;
+          line-height: 85px;
           &::after {
             display: none;
           }
           p {
             display: inline-block;
+            margin-left: 15px;
+            margin-right: 20px;
           }
           i {
             font-size: 25px;
             display: inline-block;
+            margin-right: 20px;
           }
         }
       }

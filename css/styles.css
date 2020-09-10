@@ -180,28 +180,33 @@ body {
   }
   .card-container .content .information .share-btn {
     left: 90px;
+    top: 5px;
     z-index: 2;
   }
   .card-container .content .information .share {
     width: 375px;
     bottom: -15px;
-    top: 0;
+    top: 0px;
     left: -18px;
     right: 0;
     z-index: 1;
     display: block;
     border-top-left-radius: 0;
     border-top-right-radius: 0;
+    line-height: 85px;
   }
   .card-container .content .information .share::after {
     display: none;
   }
   .card-container .content .information .share p {
     display: inline-block;
+    margin-left: 15px;
+    margin-right: 20px;
   }
   .card-container .content .information .share i {
     font-size: 25px;
     display: inline-block;
+    margin-right: 20px;
   }
 }
 
