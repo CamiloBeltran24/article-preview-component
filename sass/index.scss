@@ -156,3 +156,53 @@ body {
   font-size: 13px;
   text-align: center;
 }
+
+@media screen and (max-width: 768px) {
+  .card-container {
+    width: 100%;
+    max-width: 375px;
+    flex-direction: column;
+    height: auto;
+    .img {
+      width: 100%;
+      height: 200px;
+      display: block;
+      margin: 0;
+      border-top-right-radius: 15px;
+      border-bottom-left-radius: 0;
+    }
+    .content {
+      width: 90%;
+      .information {
+        width: 100%;
+        margin-top: 20px;
+        margin-bottom: 15px;
+        .share-btn {
+          left: 90px;
+          z-index: 2;
+        }
+        .share {
+          width: 375px;
+          bottom: -15px;
+          top: 0;
+          left: -18px;
+          right: 0;
+          z-index: 1;
+          display: block;
+          border-top-left-radius: 0;
+          border-top-right-radius: 0;
+          &::after {
+            display: none;
+          }
+          p {
+            display: inline-block;
+          }
+          i {
+            font-size: 25px;
+            display: inline-block;
+          }
+        }
+      }
+    }
+  }
+}

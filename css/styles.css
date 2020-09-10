@@ -155,4 +155,54 @@ body {
   text-align: center;
 }
 
+@media screen and (max-width: 768px) {
+  .card-container {
+    width: 100%;
+    max-width: 375px;
+    flex-direction: column;
+    height: auto;
+  }
+  .card-container .img {
+    width: 100%;
+    height: 200px;
+    display: block;
+    margin: 0;
+    border-top-right-radius: 15px;
+    border-bottom-left-radius: 0;
+  }
+  .card-container .content {
+    width: 90%;
+  }
+  .card-container .content .information {
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 15px;
+  }
+  .card-container .content .information .share-btn {
+    left: 90px;
+    z-index: 2;
+  }
+  .card-container .content .information .share {
+    width: 375px;
+    bottom: -15px;
+    top: 0;
+    left: -18px;
+    right: 0;
+    z-index: 1;
+    display: block;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+  }
+  .card-container .content .information .share::after {
+    display: none;
+  }
+  .card-container .content .information .share p {
+    display: inline-block;
+  }
+  .card-container .content .information .share i {
+    font-size: 25px;
+    display: inline-block;
+  }
+}
+
 /*# sourceMappingURL=styles.css.map */
